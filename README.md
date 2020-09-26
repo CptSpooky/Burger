@@ -10,7 +10,7 @@
 
 ## Description
 ![badge](https://img.shields.io/badge/License-MIT-yellow.svg)
-[App Link](https://github.com/CptSpooky/EmployeeTracker)
+[App Link](https://desolate-fjord-48868.herokuapp.com/)
 ![App Img](https://user-images.githubusercontent.com/66426144/94343247-db97b380-ffe4-11ea-82e4-fadaf9d31ad7.png)
 
 With the Burger App users can create a burger and devour it! It utilizes node.js, express, express route and handlebars as well as the MCV structure. In the future I might dress up the CSS but right now I'm more concerned with something that functions.
