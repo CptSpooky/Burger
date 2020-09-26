@@ -13,7 +13,6 @@ router.get("/", (req, res) => {
 
     res.render("index", burgerObj);
   });
-  //res.send("sdfsf");
  });
 
 //insert burg
