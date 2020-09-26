@@ -6,10 +6,7 @@
   {{#each burgers}}
     {{#unless this.devoured}}
       <li>{{this.burger_name}}</li>
-      <form action="/{{this.id}}?_method=PUT" method="POST">
-        <input type="hidden" name="devoured" value="false">
-        <button class="btn btn-warning" type="submit">Devour</button>
-      </form>
+      <button class="devourBtn" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Devour</button>
     {{/unless}}
   {{/each}}
 </ul>
@@ -26,10 +23,8 @@
 
 <h2>Add Burger:</h2>
 
-<form class="create-update-form" action="/" method="POST">
-  <div class="form-group">
-      <label for="dab">Burger Name:</label>
-      <input type="text" id="dab" name="burger_name">
-  </div>
-  <button class="btn btn-primary" type="submit">Add Burger</button>
+  <form class="create-form">
+      <input id="burger-input" placeholder="Burger Name" rows="3"></input>
+      <button id="burger-submit" class="btn" type="submit">Add Burger</button>
+  </form>
 </form>
