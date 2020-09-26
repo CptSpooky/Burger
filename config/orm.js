@@ -15,7 +15,7 @@ const orm = {
 
   // insert a burger
   insertOne: function(burger, cb){
-    let queryString = "INSERT INTO burgers_db.burgers (burger_name) VALUES (?)";
+    let queryString = "INSERT INTO burgers (burger_name) VALUES (?)";
     connection.query(queryString, [burger], function(err, res) {
       if (err) {throw err;}
 
